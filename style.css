@@ -8,10 +8,26 @@ body {
   size: 10px;
   line-height: 3.5em;
   font-weight: 300;
-  background-color: darkblue;
 }
 
-.nav-bar a {
+#nav-bar {
+    padding: 14px;
+    background-color: darkblue;
+}
+
+#nav-bar .nav-bar-ul {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-bar .nav-bar-ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#nav-bar .link {
     color: white;
     text-decoration: none;
     font-size: 2em;
@@ -23,13 +39,122 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
-    
+    padding-top: 10px;
+    position: relative;
+
   }
 
   .quote {
     font-size: 1.1em;
     line-height: 30%;
     text-align:start;
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
+  }
+
+  #general-information {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #general-information .text {
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px;
+  }
+
+  #general-information .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+  }
+
+  #general-information .link-btn {
+    background-color: blue;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 30px;
+  }
+
+  #structure > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #structure .service-box {
+    font-size: 1.7em;
+    text-align: center;
+    border-width: 2px solid #eee;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px 0 #eee;
+    margin: 50px 5% 0 5%;
+    padding: 20px;
+    width: 40%;
+  }
+
+  #structure .service-box img {
+    width: 125px;
+  }
+
+  #team {
+    background-color: darkblue;
+    padding: 5px 0;
+  }
+
+  #team > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #team .section-text {
+    font-size: 1em;
+    color: white;
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #team .member-name {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+  }
+
+  #team .img-team {
+    width: 250px;
+    height: 180px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #schedule h3 {
+    color: black;
+  }
+
+  #schedule .schedule-table {
+    margin: 0 auto 40px auto;
+    font-size: 1.5em;
+  }
+
+  #schedule .schedule-table th, td {
+    border-bottom: solid 1px black;
+    padding: 5px 10px;
+    text-align: center;
   }
 
   h1 {
@@ -40,7 +165,7 @@ body {
   }
 
   h2 {
-    Size: 5em;
+    font-size: 5em;
     text-align: center;
     Transform: uppercase;
     font-family: Condensed;
@@ -49,25 +174,62 @@ body {
   }
 
   h3 {
-    Size: 4.2em;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 0.4px;
     text-align: center;
     line-height: 1em;
     font-family: 'Roboto Condensed';
   }
-
+  
   h4 {
-    Size: 1.5em;
+    font-size: 1.5em;
     letter-spacing: 0.4px;
     line-height: 1em;
     font-family: 'Roboto Condensed';
+    margin: 15px;
   }
 
   h5 {
-    Size: 1.2em;
-    line-height: 1em;
+    font-size: 2em;
+    line-height: 2em;
     font-family: 'Roboto Condensed';
+    color: white;
+    text-align: center;
+    margin: 0;
   }
 
+  #dark-background-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: darkblue;
+    padding: 40px 100px;
+    margin-bottom: 25px;
+  }
 
+  #dark-background-footer li {
+    list-style: none;
+  }
+
+  #dark-background-footer ul a {
+    font-size: 1.9em;
+    color: blue;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  #dark-background-footer .address {
+    font-style: normal;
+    font-size: 1.9em;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .map-frame {
+    height: 375px;
+    width: 100%;
+  }
 
 
